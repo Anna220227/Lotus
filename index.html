@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница</title>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header>
+    <div class="lg">
+        <img src="./img/a5158.jpg" alt="Lotus-Jetty - магазин цветов"><span>lotus-jetty</span>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a class="active" href="#">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <nav class="breadcrumbs">
+        <ul>
+            <li>Главная</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="reviews">
+            <h3>Последние обзоры</h3>
+            <div class="reviews-box">
+                <div><img class="news-img" src="./img/product/roseWhite.jpg" alt="Букет белых роз"></div>
+                <div class="news-info">
+                    <h4><a href="#">Нежность, красота, естественность, кротость, невинность, честность, открытость — вот основные значения белых роз в современной флористике.</a></h4>
+                    <p>Такой символизм присущ им не только благодаря цвету. Множество легенд и традиций наделяют белоснежные розы этими качествами.</p>
+                    <p>Белые розы, как символ божественности, избранности и чистоты, будут уместным подарком практически всегда.</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="reviews-box">
+                <div ><img class="news-img" src="./img/product/rosePurple.jpeg" alt="Букет фиолетовых роз"></div>
+                <div class="news-info">
+                    <h4><a href="#">Фиолетовый цвет розы символизирует восхищение и преклонение перед достижениями.</a></h4>
+                    <p>Это элегантный способ показать кому-то, насколько вы цените его усилия и тяжелую работу. </p>
+                    <p>Поводом для такого подарка могут быть успехи в работе или просто благодарность, в любом случае фиолетовые розы — отличный выбор.</p>
+                </div>
+            </div>
+        </div>
+        <div class="info-company">
+            <h3>О компании</h3>
+            <p>Lotus Jetty – это французский сервис по доставке роз недалеко от сердца российской столицы.  
+                Дизайн наших цветочных композиций олицетворяет собой роскошь и утонченный вкус. Наши цветы 
+                это не просто цветы, это настоящий готовый подарок, больше похожий на вещь из престижного бутика, чем 
+                на простой букет.</p>
+            <p>Внимание к деталям и желаниям наших клиентов для нас наиважнейшая задача. Мы обращаем внимание на каждую 
+                мелочь, так как наши букеты для нас скорее искусство чем работа. Порадуйте своих близких вместе с нашим 
+                сервисом и убедитесь в этом сами! Если нет, букет за наш счет.</p>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="copyright">
+            <p>&copy;&nbsp;2023 Все права защищены</p>
+        </div>
+        <div class="footer-info">
+            <p> </p>
+            <p>Адрес: г.Москва, ул. Мясницкая, д. 30</p>
+            <p>Тел.: +7 (495) 180-42-36</p>
+            <p>Email: info@lotus.ru</p>
+        </div>
+    </footer>
+</div>
+<script>
+    if ('serviceWorker' in navigator) {
+     window.addEventListener('load', function() {  
+       navigator.serviceWorker.register('/sw.js').then(
+         function(registration) {
+           // Registration was successful
+           console.log('ServiceWorker registration successful with scope: ', registration.scope); },
+         function(err) {
+           // registration failed :(
+           console.log('ServiceWorker registration failed: ', err);
+         });
+     });
+    }
+    </script>
+</body>
+</html>
